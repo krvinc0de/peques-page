@@ -21,8 +21,12 @@ header .container {
 
 header .logo-navbar {
     margin: 0;
-    padding: 25px 30px;
-    background-image: url('./assets/logo.png');
+    width: 100px;
+    height: 100px;
+    background-image: url("assets/logo.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 header nav {
@@ -48,14 +52,14 @@ header a:hover {
         0deg,
         rgba(0,0,0,0.1),
         rgba(0,0,0,0.1)
-    ), url("assets/background.png");
+    ), url("assets/hero2.png");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #section-cards {
-    border: #FAB075 1px solid;
+    /* border: #FAB075 1px solid; */
     /* display: flex;
     flex-direction: row; */
  
@@ -121,19 +125,19 @@ header a:hover {
 }
 
 #section-cards .image-bg-1 {
-    background-color: #7BADB2;
+    background-color: #E3EEEF;
 }
 
 #section-cards .image-bg-2 {
-    background-color: #FAB075;
+    background-color: #FFCF66;
 }
 
 #section-cards .image-bg-3 {
-    background-color: #FFA087;
+    background-color: #F6B4B0;
 }
 
 #section-cards .image-bg-4 {
-    background-color: #9DCD5A;
+    background-color: #81A969;
 }
 
 .card:first-child {
@@ -152,10 +156,33 @@ header a:hover {
     background-color: #9DCD5A;
 }
 
+#section-mision {
+    height: 50vh;
+    background-image: url("assets/boysplaying.png");
+    background-position: right 50% bottom 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
 
 @media (min-width: 768px) {
+    header {
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+    }
+    header .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 10px;
+        height: 80px;
+    }
+    header nav {
+        padding-bottom: 0px;
+    }
     #section-cards .container{
-        border: #9DCD5A 1px solid;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
