@@ -1,7 +1,14 @@
+/* @font-face {
+    font-family: 'fuente';
+    src: url("./assets/fuente.otf");
+} */
+
+* {
+    font-family: 'fuente', sans-serif
+}
 
 body{
     margin: 0;
-    font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -31,6 +38,8 @@ header .logo-navbar {
 
 header nav {
     padding-bottom: 25px;
+    display: flex;
+    gap: 20px;
 }
 
 header a {
@@ -52,7 +61,7 @@ header a:hover {
         0deg,
         rgba(0,0,0,0.1),
         rgba(0,0,0,0.1)
-    ), url("assets/hero2.png");
+    ), url("assets/background.png");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -161,8 +170,7 @@ header a:hover {
     background-image: url("assets/boysplaying.png");
     background-position: right 50% bottom 0;
     background-repeat: no-repeat;
-    background-size: contain;
-    
+    background-size: contain;  
 }
 
 
@@ -191,4 +199,11 @@ header a:hover {
     #section-cards .card {
         margin-bottom: 0;
     }
+
+    #section-mision{
+        background-size:cover;
+        background-position: 50% 0%;
+        height: 70vh;
+    }
+    
 }
