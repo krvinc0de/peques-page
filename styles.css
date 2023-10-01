@@ -12,7 +12,7 @@ body{
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 1280px;
     margin: auto;
 }
 
@@ -65,13 +65,6 @@ header a:hover {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-#section-cards {
-    /* border: #FAB075 1px solid; */
-    /* display: flex;
-    flex-direction: row; */
- 
 }
 
 #section-cards .container {
@@ -135,18 +128,34 @@ header a:hover {
 
 #section-cards .image-bg-1 {
     background-color: #E3EEEF;
+    background-image: url("assets/images/logo-card-book.png");
+    background-position: center center;
+    background-size: 75%;
+    background-repeat: no-repeat;
 }
 
 #section-cards .image-bg-2 {
     background-color: #FFCF66;
+    background-image: url("assets/images/logo-card-idea.png");
+    background-position: center center;
+    background-size: 75%;
+    background-repeat: no-repeat;
 }
 
 #section-cards .image-bg-3 {
     background-color: #F6B4B0;
+    background-image: url("assets/images/logo-card-piece.png");
+    background-position: center center;
+    background-size: 75%;
+    background-repeat: no-repeat;
 }
 
 #section-cards .image-bg-4 {
     background-color: #81A969;
+    background-image: url("assets/images/logo-card-owl.png");
+    background-position: center center;
+    background-size: 75%;
+    background-repeat: no-repeat;
 }
 
 .card:first-child {
@@ -165,12 +174,100 @@ header a:hover {
     background-color: #9DCD5A;
 }
 
+#section-mision .container {
+    padding: 10px;
+}
+
+#section-mision h1 {
+    margin: 0;
+    font-size: 50px;
+}
+
+#section-mision p {
+    font-size: 20px;
+}
+
 #section-mision {
     height: 50vh;
     background-image: url("assets/boysplaying.png");
-    background-position: right 50% bottom 0;
+    background-position: left 50% bottom 0;
     background-repeat: no-repeat;
     background-size: contain;  
+}
+
+footer {
+    margin-top: 20px;
+    background-color: #7BADB2;
+    padding: 10px;
+}
+
+footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .contenedor-sociales {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer h2 {
+    font-size: 25px;
+    color: #FFFF;
+    margin: 10px;
+}
+
+footer .facebook {
+    width: 35px;
+    height: 35px;
+    background-image: url("assets/images/facebook-icon.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;  
+}
+
+footer .instagram {
+    width: 35px;
+    height: 35px;
+    background-image: url("assets/images/instagram-icon.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;  
+}
+
+footer .email {
+    width: 35px;
+    height: 35px;
+    background-image: url("assets/images/email-icon.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;  
+}
+
+footer .tiktok {
+    width: 35px;
+    height: 35px;
+    background-image: url("assets/images/tiktok-icon.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;  
+}
+
+footer .copyright {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+    height: 5vh;
+}
+
+footer p {
+    margin: 0;
 }
 
 
@@ -200,10 +297,34 @@ header a:hover {
         margin-bottom: 0;
     }
 
-    #section-mision{
+    #section-mision .container {
+        padding: 0;
+    }
+    
+    #section-mision h1 {
+        margin: 0;
+        font-size: 60px;
+    }
+    
+    #section-mision p {
+        font-size: 25px;
+    }
+
+    #section-mision {
         background-size:cover;
         background-position: 50% 0%;
         height: 70vh;
+    }
+
+    footer h2 {
+        font-size: 60px;
+        margin: 20px;
+    }
+
+    footer a {
+       border: white 2px solid;
+       border-radius: 10px;
+       padding: 20px;
     }
     
 }
